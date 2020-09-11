@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(97, 97, 9);
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+/* le conteneur, sa largeur et est autocentré */
+.conteneur {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+div {
+    padding: 2px;
+    margin: 5px;
+}
+footer div{
+    margin: 5px;
+}
+p {
+    padding: 5px;
+}
+
+
+
+/* la classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Définition de la largeur des colonnes en % */
+
+
+
+.col-1 {
+   /*  cette valeur est la largeur en % d'une colonne */
+    width: 8.333333%;
+    background-color: yellow;
+    padding: 4px;
+    
+} 
+
+.col-2 {
+    width: 16.666666%;
+    background-color: mediumaquamarine;
+    padding: 4px;
+}
+
+.col-3 {
+    width: 25%;
+    background-color: rgb(163, 163, 238);
+    padding: 4px;&
+}
+
+.col-4{
+    width: 33.333333%;
+    background-color: magenta;
+    padding: 4px;
+}
+
+.col-5 {
+    width: 41.666666%;
+    background-color: orange;
+    padding: 4px;
+}
+
+.col-6 {
+    width: 50%;
+    background-color: peru;
+    padding: 4px;
+}
+
+.col-7 {
+    width: 58.333333%;
+    background-color: red;
+    padding: 4px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    background-color: rosybrown;
+    padding: 4px;
+}
+
+.col-9 {
+    width: 75%;
+    background-color: silver;
+    padding: 4px;
+}
+
+.col-10 {
+    width: 83.333333%;
+    background-color: springgreen;
+    padding: 4px;
+}
+
+.col-11 {
+    width: 91.666666%;
+    background-color: teal;
+    padding: 4px;
+}
+
+.col-12 {
+    width: 100%;
+    background-color: pink;
+    padding: 4px;
+}
+
+.marge-1 {
+    margin-left: 8.333333%;
+    background-color: wheat;
+    padding: 4px;
+}
+.marge-2 {
+    margin-left: 16.666666%;
+    background-color: yellowgreen;
+    padding: 4px;
+}
+
+.marge-3 {
+    margin-left: 25%;
+    background-color: violet;
+    padding: 4px;
+}
+.rose {
+    background-color: pink;
+}

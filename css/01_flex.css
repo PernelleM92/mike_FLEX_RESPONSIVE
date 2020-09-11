@@ -1,0 +1,112 @@
+body {
+    background: rgb(250, 242, 227);
+}
+
+/* FLEXBOX permet d'aligner horizontalement ou verticalement dans un élément */
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+.rouge {
+    background: red;
+    color: white;
+    width: 100px;
+}
+
+.orange {
+    background: rgb(255, 136, 0);
+    color: white;
+    width: 100px;
+}
+
+.orange2 {
+    background: rgb(253, 208, 58);
+    color: white;
+    width: 100px;
+}
+
+.jaune {
+    background: yellow;
+    width: 100px;
+}
+
+.jc-evenly {
+    display: flex;
+    /* conteneur trop petit, les divs s'adaptent à la largeur du parent */
+    /* width: 300px; */
+    /* si on dit flex: wrap; et qu'il n'y a pas assez d'espace les éléments suivants iront en dessous. Elles auront la taille que nous leur avons données */
+    /* si on dit flex: wrap-reverse; les éléments s'inversent */
+    /* le comportement normal est flex: nowrap; comportement par défaut
+    flex-wrap: wrap-reverse; */
+    /* justify-content: différentes valeurs pour justifier les éléments. Par défaut flex-start puis flex-end (à la fin), center, space-between(entre), space-around (autour) et space-evenly (uniformément) */
+    justify-content: space-evenly;
+    height: 100px;  
+}
+
+.jc-around {
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+
+}
+
+.jc-between {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    
+    /* si le parent à une hauteur, les enfants ont par défaut cette hauteur, qui est "stretch", étirée. flex-start, flex-end, center ou baseline (ligne de base des caractères) */
+    align-items: baseline;
+}
+
+
+/* toutes les divs qui se situent dans la div parente qui est display: flex */
+.jc-evenly div, .jc-around div, .jc-between div, .ordre div, .flex-grow div {
+    width: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.jc-between div:nth-child(2) {
+    height: 50px;
+}
+
+.jc-between div:nth-child(4) {
+    height: 150px;
+    font-size: 4em;
+}
+
+.ordre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ordre div:first-child {
+    font-size: 3em;
+    /* utile en responsive, permet de déplacer un élément dans une position donnée */
+    order: 4;
+}
+
+/* FLEX-GROW : A VOIR */
+
+.flex-grow {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-bottom: 200px;
+    justify-content: space-around;
+}
+
+.flex-grow div {
+    margin: 10px;
+}
+
+.flex-grow div:first-child {
+    flex-grow: 1;
+    flex-flow: ;
+}

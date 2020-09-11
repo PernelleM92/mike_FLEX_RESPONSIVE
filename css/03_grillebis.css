@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linen;
+    font-family: 'Old Standard TT', serif;
+}
+h1 {
+    text-transform: uppercase;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 1px 1px rgb(75, 59, 39);
+    font-size: 4em;
+}
+header {
+    background: #A79274;
+}
+div.gras {
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+div.row-reverse {
+    text-align: center;
+    font-weight: bold;
+}
+footer div {
+    padding: 10px;
+}
+/* DES COULEURS GÉNÉRIQUES */
+.brun-clair {
+    background: rgb(212, 185, 151);
+}
+.brun-fonce {
+    background: rgb(104, 81, 53);
+    color: seashell;
+}
+.marron {
+    background: rgb(146, 9, 9);
+    color: seashell;
+}
+.bordeaux {
+    background: rgb(182, 13, 13);
+    color: seashell;
+}
+.rouge {
+    background: red;
+}
+.orange {
+    background: rgb(255, 115, 0);
+}
+.orange2 {
+    background: rgb(255, 196, 0);
+}
+.jaune {
+    background: yellow;
+}
+.vert {
+    background: rgb(187, 255, 0);
+}
+.vert-fonce {
+    background: rgb(0, 194, 0);
+}
+.turquoise {
+    background: rgb(40, 214, 191);
+}
+.bleu-clair {
+    background: rgb(77, 203, 245);
+}
+.bleu-fonce {
+    background: rgb(99, 99, 250);
+}
+.vert-fonce2 {
+    min-height: 60px;
+    background: rgb(20, 160, 20);
+}
+/* le conteneur et sa largeur et est auto-centré */
+.conteneur {
+    margin: 0 auto;
+    width: 80%;
+    background: #fff;
+    border: 2px solid brown;
+    padding: 15px;
+}
+/* La classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+/* Pour mettre en colonne  */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* définition de la largeur des colonnes en %  on calcule la première colonne (100/12) que l'on multiplie pour avoir les autres valeurs*/
+.col-1 {
+    width: 8.333333%;
+}
+.col-2 {
+    width: 16.666666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666666%;
+}
+.col-6 {
+    width: 50%
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666666%;
+}
+.col-12 {
+    width: 100%;
+}
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+/* Pour les titres de la page  */
+h1 {
+    text-align: center;
+}

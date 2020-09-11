@@ -1,0 +1,29 @@
+body {
+    background: #fff;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.olive {
+    background-color: olive;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.vert {
+    background-color: lightgreen;
+}
+
+.flex {
+    display: flex;
+    /* row rangée, row-reverse */
+    flex-direction: column-reverse
+}
+
+.flex div {
+    padding: 5px;
+}
