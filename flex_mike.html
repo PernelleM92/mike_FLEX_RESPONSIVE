@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Tintin</title>
+</head>
+
+  <!-- style dans l'entête -->
+  
+  <style>
+
+    /* * = tous les éléments html  */
+    * {
+        box-sizing: border-box;
+    }
+
+    .clear {
+            clear: both;
+        }
+
+    body {
+        font-family: font-family: "Gill Sans", sans-serif;;
+    }
+
+    header {
+        background-color: #5bccd6;
+        padding: 30px;
+
+        text-align: center;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    nav {
+        width: 30%; /* largeur */
+        height: 300px; /* hauteur */
+        background: #469ba3;
+        padding: 20px;
+        }
+
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        article {
+            width: 70%;
+            height: 300px;
+            background-color: #a1d8dd;
+            padding: 20px;
+        }
+
+        footer {
+            flex-basis: auto;
+            background-color: #255357;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .conteneur {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+            header {
+                text-align: ;
+            }
+        }
+
+        #engras {
+            font-weight: bold;
+        }
+
+    </style>
+
+<body>
+    <p id="engras">HTML CSS : une maquette responsive en flex</p>
+    <p>Dans cet exemple nous avons un en-tête, 2 colonnes/boites et un pied de page</p>
+    <p>Sur un écran inférieur a 600px les colonnes se placeront les unes au dessus des autres</p>
+
+    <header>
+        <h1>Les aventures de Tintin</h1>
+    </header>
+    
+    <!-- section principale qui contient nav et article -->
+   <section>
+
+      
+
+        <div class="conteneur">
+            <nav>
+                
+                <ul>
+                    <li><a href="#">Tintin</a></li>
+                    <li><a href="#">Le Capitaine Haddock</a></li>
+                    <li><a href="#">Milou</a></li>
+                    <li><a href="#">Le Professeur Tournesol</a></li>
+                </ul>
+            </nav>
+            
+            <article>
+                
+                <h2>Tintin</h2>
+                <p>Les Aventures de Tintin constituent une série de bandes dessinées créée par le dessinateur et scénariste belge Hergé.</p> 
+                <p>Avec 240 millions d'exemplaires vendus. Les Aventures de Tintin font partie des bandes dessinées européennes les plus célèbres et plus pôpulaires du XIXe siècle.</p>
+                
+            </article>
+        </div>
+
+   </section>
+
+   <!-- rétablir le flux -->
+   <div class="clear"></div>
+
+   <footer>
+       <p>Pied de page</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astérix Correction</title>
+
+    <!-- style dans l'entête -->
+    <style>
+
+        /* * = tous les éléments html  */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* classe generique fond de couleur */
+
+        .bleu {
+            background-color: lightcyan;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        header {
+            background-color: rgb(238, 225, 45);
+            padding: 30px;
+
+            text-align: center;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        /* création des éléments qui flottent les uns par rapport aux autres */
+        
+        /* clear méthode habituel */
+
+        .clear {
+            clear: both;
+        }
+
+        /* Autre méthode pour rétablir le flux */
+        section:after {
+            /* Apres la section le contenu est vide ce qui permet de voir la caracteristique de footer ( le padding) */
+            content: "";
+            /* on rétablit le flux */
+            clear: both;
+            display: table;
+        }
+
+        nav {
+            float: left;
+            width: 30%; /* largeur */
+            height: 300px; /* hauteur */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            width: 70%;
+            height: 300px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgb(238, 225, 45);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+    </style>
+</head>
+
+   
+<body>
+    <header>
+        <h1>Asterix le Gaulois</h1>
+    </header>
+    
+    <!-- section principale qui contient nav et article -->
+   <section>
+
+       <!-- Une nav à une largeur de 30% a gauche -->
+
+        <nav>
+            <p class="bleu">Indications: <code>&lt;nav></code> : 30%</p>
+            <ul>
+                <li><a href="#">Astérix</a></li>
+                <li><a href="#">Obélix</a></li>
+                <li><a href="#">Panoramix</a></li>
+                <li><a href="#">Bonémine</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <p class="bleu">Indications: <code>&lt;article></code> : 70%</p>
+            <h2>Astérix</h2>
+            <p>Astérix, anciennement Astérix le Gaulois, est une série de bande dessinée française créée le 29 octobre 1959 par le scénariste français René Goscinny et le dessinateur français Albert Uderzo dans le n°1 du journel français Pilote.</p>
+            
+        </article>
+
+   </section>
+   <!-- rétablir le flux ( méthode habituel)' -->
+   <div class="clear"></div>
+
+   <footer>
+       <p>Pied de page</p>
+    </footer>
+    
+</body>
+</html>
